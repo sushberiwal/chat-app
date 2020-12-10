@@ -9,9 +9,11 @@ app.use(express.static('public'))
 let users  = [];
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-// res.redirect("/index.html");
+//   res.sendFile(__dirname + '/public/index.html');
+res.redirect("/index.html");
 });
+
+
 
 
 
